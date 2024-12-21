@@ -6,10 +6,17 @@
         <ul class="flex gap-4">
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/products">Products</NuxtLink></li>
+          <li>
+            <NuxtLink
+              to="/products"
+              class="bg-[#12b488] text-white px-3 py-2 rounded-md text-sm"
+              >Products</NuxtLink
+            >
+          </li>
         </ul>
       </nav>
     </header>
+
     <div class="container mx-auto p-4">
       <slot />
     </div>
