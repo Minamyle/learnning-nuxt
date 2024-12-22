@@ -1,15 +1,12 @@
 <template>
-  <div>
-    <p>product details for {{ id }}</p>
-    <p>
-      my name is amina and i am a student of noun university studying computer
-      science
-    </p>
-  </div>
+  <div><ProductDetails :product="product" /></div>
 </template>
 
 <script setup>
 const { id } = useRoute().params;
+const url = "https://fakestoreapi.com/products/" + id;
+
+const { data: product } = await useFetch(url, { key: id });
 definePageMeta({
   layout: "products",
 });
