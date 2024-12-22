@@ -13,6 +13,7 @@
               >Products</NuxtLink
             >
           </li>
+         
         </ul>
       </nav>
     </header>
