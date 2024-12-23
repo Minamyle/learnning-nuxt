@@ -2,10 +2,12 @@
     <div>
 <h2>About</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis vero et laborum incidunt repudiandae sequi eius deserunt accusantium voluptatum.</p>
+<div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
+const { data } = await useFetch('/api/ninja' )
 
 </script>
 
